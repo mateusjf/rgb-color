@@ -1,0 +1,67 @@
+body{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    /*background: rgb(255, 115, 0);*/
+    
+}
+.caixa{
+    border-radius: 8px;
+    border: 5px solid rgb(136,141,255,1);
+    padding: 20px;
+    display: inline;
+    /*background: rgba(0, 0, 0, 0.5);*/
+    position: relative;
+    background-image: url(../img/fundo.jpg);   
+}
+span{
+    color: rgb(136,141,255,1);
+}
+.cor{
+    width: 85px;
+    height: 85px;
+    background-color: rgba(0, 0, 0, 1);
+    /*border: 1px solid black;*/
+    margin: 15px auto;
+    border-radius: 100%;
+}
+.painel{
+   display: flex;
+   flex-direction: column;
+}
+.controle{
+    margin: auto;
+}
+h1{
+    text-align: center;
+    width: 100vw;
+}
+h5{
+    padding: 0;
+    margin: 0;
+    margin-bottom: 40px;
+}
+input{
+    width: 370px; 
+}
+.filtro{
+    /*background: rgba(0, 0, 0, 0.2);*/
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.rgba, .painel, .controle, .cor{
+    z-index: 8000;
+}
+.rgba, .cor{
+    position: relative;
+}
